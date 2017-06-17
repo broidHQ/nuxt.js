@@ -50,7 +50,7 @@
     "watch": "webpack --watch",
     "precommit": "npm run lint",
     "prepublish": "npm run build",
-    "postinstall": "opencollective postinstall"
+    "postinstall": "npm run prepublish && opencollective postinstall"
   },
   "engines": {
     "node": ">=4.3.0 <5.0.0 || >=5.10",
